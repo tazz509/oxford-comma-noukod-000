@@ -1,10 +1,10 @@
 def oxford_comma(array)
-array.join
-if array =2
-array.join ("and")
-elsif array = 3
-  array
-else
-  array.length
-end
+  if array.size == 2
+    last_value = array.pop
+    array.join(', ') + ", and #{last_value}"
+  elsif array.size == 2
+    "#{array.first} and #{array.last}"
+  else
+    array.join
+  end
 end
