@@ -1,5 +1,5 @@
 def oxford_comma(array)
-  if array.size == 2
+  if array.size > 2
     last_value = array.pop
     array.join(', ') + ", and #{last_value}"
   elsif array.size == 2
